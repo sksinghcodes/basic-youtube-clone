@@ -1,5 +1,6 @@
 {
-  "name": "first-react-app",
+  "name": "basic-youtube-clone",
+  "homepage": "https://sksinghcodes.github.io/basic-youtube-clone/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
