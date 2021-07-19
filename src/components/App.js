@@ -1,8 +1,9 @@
 import React from 'react';
-import SearchBar from './SearchBar';
+import Header from './Header';
 import VideoList from './VideoList'
 import youtube from '../apis/youtube';
 import VideoDetail from './VideoDetail';
+import './App.css';
 
 class App extends React.Component {
     state = { 
@@ -31,15 +32,16 @@ class App extends React.Component {
 
     render() {
         return (
-            <div className='ui container mt'>
-                <SearchBar numOfVideos={this.state.videos.length} onFormSubmit={this.onTermSubmit} />
-                <div className="ui grid">
-                    <div className="ui row">
-                        <div class="eleven wide column">
+            <div className='master'>
+                <Header onFormSubmit={this.onTermSubmit} />
+                <div className="main-wrapper">
+                    <div className="container">
+                        <div className="main">
                             <VideoDetail video={this.state.selectedVideo} />
-                        </div>
-                        <div className="five wide column">
-                            <VideoList videos={this.state.videos} onVideoSelect={this.onVideoSelect}/>
+                            <div className="sidebar">
+                                <p className="results-count">I have {this.state.videos.length} videos.</p>
+                                <VideoList videos={this.state.videos} onVideoSelect={this.onVideoSelect}/>
+                            </div>
                         </div>
                     </div>
                 </div>

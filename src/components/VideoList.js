@@ -10,7 +10,7 @@ const VideoList = ({videos, onVideoSelect}) => {
             key={video.id.videoId} video={video}
         /> );
 
-    return <div className="video-list ui relaxed devided list">{renderedList}</div>
+    return <div className="video-list">{renderedList}</div>
 }
 
 export default VideoList
