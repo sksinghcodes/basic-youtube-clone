@@ -150,11 +150,50 @@
     }
 
     .logo {
-        width: 70px;
-        margin-right: 30px;
+        width: 55px;
     }
 
     .header {
-        padding: 15px 0;
+        margin: 0;
+        box-shadow: none;
+        padding: 5px 10px;
+        margin-bottom: 1px;
+    }
+
+    .search-form {
+        height: 35px;
+        width: calc(100% - 85px);
+    }
+
+    .player-wrapper, .sidebar {
+        box-shadow: none;
+    }
+
+    .sidebar {
+        margin: 0;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .video-item img {
+        width: 120px;
+    }
+
+    .video-item {
+        padding: 5px 10px;
+    }
+
+    .video-list {
+        padding-bottom: 5px;
+    }
+
+    .player-wrapper {
+        margin-bottom: 2px;
+    }
+
+    .search-form input {
+        background: #f1f1f1;
     }
 }
